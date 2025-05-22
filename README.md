@@ -27,8 +27,10 @@ SHEMA VEZAVE:
 
 ![image](https://github.com/user-attachments/assets/539a48d0-8e3e-4f44-9740-ff0d481d72a4)
 
-VIDEO VEZAVE
+VIDEO VEZAVE:
 
 
 https://github.com/user-attachments/assets/498db188-6a6b-4fc4-af22-cb30bd542590
 
+NAVODILA KVIZA:
+ Imamo 3 tipke A, B in C. Krmiljenje naj ugotavlja, katera tipka je bila pritisnjena prva, katera druga in katera tretja. Zelena LED pomeni, da ni nihče še pritisnil na tipko (začetek kviza), rumena LED pomeni, da je vsaj en igralec pritisnil na tipko. Ko so vsi trije igralci pritisnili svoje tipke, utripa rdeča LED. S tipko za reset R ugasnemo rdečo LED diodo in resetiramo kviz. Za prikaz vrstnega reda uporabite LCD zaslon.
