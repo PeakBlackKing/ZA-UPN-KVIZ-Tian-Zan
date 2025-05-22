@@ -1,0 +1,80 @@
+
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 9, 10, 13 );
+
+const int buttonA = 2;
+const int buttonB = 3;
+const int buttonC = 4;
+const int resetButton = A0;
+const int greenLED = 6;
+const int yellowLED = 7;
+const int redLED = 8;
+
+int order[3] = {-1, -1, -1};
+bool pressed[3] = {false, false, false};
+bool resetState = false;
+int count = 0;
+
+void setup() {
+  pinMode(buttonA, INPUT);
+  pinMode(buttonB, INPUT);
+  pinMode(buttonC, INPUT);
+  pinMode(resetButton, INPUT);
+  pinMode(greenLED, OUTPUT);
+  pinMode(yellowLED, OUTPUT);
+  pinMode(redLED, OUTPUT);
+  lcd.begin(16, 2);
+  resetQuiz();
+}
+
+void loop() {
+  if (digitalRead(resetButton) == HIGH) {
+    resetQuiz();
+  }
+
+  checkButton(buttonA, 0);
+  checkButton(buttonB, 1);
+  checkButton(buttonC, 2);
+
+  if (count == 3) {
+    digitalWrite(redLED, HIGH);
+    delay(500);
+    digitalWrite(redLED, LOW);
+    delay(500);
+  }
+}
+
+void checkButton(int button, int index) {
+  if (digitalRead(button) == HIGH && !pressed[index]) {
+    pressed[index] = true;
+    order[count] = index;
+    count++;
+    digitalWrite(yellowLED, HIGH);
+    displayOrder();
+  }
+}
+
+void displayOrder() {
+  lcd.clear();
+  lcd.print("Vrsti red:");
+  lcd.setCursor(0, 1);
+  for (int i = 0; i < 3; i++) {
+    if (order[i] == 0) lcd.print("A ");
+    else if (order[i] == 1) lcd.print("B ");
+    else if (order[i] == 2) lcd.print("C ");
+  }
+}
+
+void resetQuiz() {
+  for (int i = 0; i < 3; i++) {
+    pressed[i] = false;
+    order[i] = -1;
+  }
+  count = 0;
+  digitalWrite(greenLED, HIGH);
+  digitalWrite(yellowLED, LOW);
+  digitalWrite(redLED, LOW);
+  lcd.clear();
+  lcd.print("Kviz pripravljen");
+}
