@@ -22,3 +22,13 @@ SLIKA VEZAVE:
 
 ![image](https://github.com/user-attachments/assets/8fa50b70-dc84-40b5-b7f7-09cbc035271c)
 
+
+SHEMA VEZAVE:
+
+![image](https://github.com/user-attachments/assets/539a48d0-8e3e-4f44-9740-ff0d481d72a4)
+
+VIDEO VEZAVE
+
+
+https://github.com/user-attachments/assets/498db188-6a6b-4fc4-af22-cb30bd542590
+
