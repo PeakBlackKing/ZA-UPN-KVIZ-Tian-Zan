@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a7429e03-bd40-4284-b475-df8052686685)za-uip-projekt-kviz
+za-uip-projekt-kviz
 
 Na začetku kviza sveti zelena LED dioda, kar pomeni, da še noben igralec ni pritisnil svoje tipke in je kviz pripravljen na začetek. Ko katerikoli igralec pritisne eno izmed tipk A, B ali C, se zelena LED ugasne, prižge pa se rumena LED, ki nakazuje, da je kviz v teku in da je vsaj en igralec že sodeloval.Vsakič, ko igralec pritisne svojo tipko, se njegov pritisk zabeleži v točnem vrstnem redu. Ta vrstni red se nato sproti izpiše na LCD zaslon, tako da vsi vidijo, kdo je bil prvi, drugi in tretji.
 Ko so bile pritisnjene vse tri tipke – torej so sodelovali vsi trije igralci – se rumena LED ugasne in začne utripati rdeča LED dioda, kar pomeni, da je kviz končan in se rezultati ne spreminjajo več.
@@ -19,5 +19,5 @@ KOSOVINA(Potrebni elementi):
 | 1x       | Breadboard         | Za sestavo               |
 
 SLIKA VEZAVE:
+![image](https://github.com/user-attachments/assets/a7429e03-bd40-4284-b475-df8052686685)
 
-![Uploading 20250522_095126.jpg…]()
