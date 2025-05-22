@@ -19,5 +19,6 @@ KOSOVINA(Potrebni elementi):
 | 1x       | Breadboard         | Za sestavo               |
 
 SLIKA VEZAVE:
-![image](https://github.com/user-attachments/assets/a7429e03-bd40-4284-b475-df8052686685)
+
+![image](https://github.com/user-attachments/assets/8fa50b70-dc84-40b5-b7f7-09cbc035271c)
 
